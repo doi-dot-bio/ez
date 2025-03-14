@@ -1,0 +1,17 @@
+{
+  "name": "ez",
+  "version": "1.0.0",
+  "description": "A simple Electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.0.0"
+  },
+  "dependencies": {
+    "darkreader": "^4.9.67"
+  }
+}
