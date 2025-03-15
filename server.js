@@ -34,6 +34,7 @@ app.get('/send-message', (req, res) => {
         latestMessage = message;
         io.emit('message', message);
         io.emit('refresh');
+        io.emit('clear-console'); // Add this line to emit a clear console event
         console.log(`Message received: ${message}`);
         res.send({ success: true, message: 'Message sent successfully' });
     } else {

@@ -175,6 +175,12 @@
             // You could do a full page refresh with location.reload()
             // or just update specific elements as we're doing with the message
         });
+        
+        // Listen for clear console events
+        socket.on('clear-console', () => {
+            console.clear();
+            console.log('Console cleared by server');
+        });
 
         // For the keypress functionality from the original app
         function handleKeyPress(event) {
